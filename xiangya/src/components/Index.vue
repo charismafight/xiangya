@@ -1,9 +1,4 @@
 <template>
-    <div>
-        <RouterLink to="/">
-            <img src="../assets/images/banner_large.png" width="100%" height="200">
-        </RouterLink>
-    </div>
     <div class="gradient-color" style="text-align: center;">
         <h1 class="tt">湘雅病理教育教学国际论坛</h1>
         <h3 class="ttt">暨肿瘤病理规范化诊断及新进展培训班会议</h3>
@@ -19,7 +14,7 @@
                 <el-card>
                     <RouterLink to="/info">
                         <el-button class="btn">
-                            <el-icon :size="iconSize" color="#409efc">
+                            <el-icon :size="iconSize" :color="iconColor">
                                 <Message />
                             </el-icon>
                         </el-button>
@@ -33,7 +28,7 @@
                 <el-card>
                     <RouterLink to="/schedule">
                         <el-button class="btn">
-                            <el-icon :size="iconSize" color="#95d475">
+                            <el-icon :size="iconSize" :color="iconColor">
                                 <InfoFilled />
                             </el-icon>
                         </el-button>
@@ -47,7 +42,7 @@
                 <el-card>
                     <RouterLink to="/notice">
                         <el-button class="btn">
-                            <el-icon :size="iconSize" color="#eebe77">
+                            <el-icon :size="iconSize" :color="iconColor">
                                 <Reading />
                             </el-icon>
                         </el-button>
@@ -61,7 +56,7 @@
                 <el-card>
                     <RouterLink to="/schedule">
                         <el-button class="btn">
-                            <el-icon :size="iconSize" color="#f4c28f">
+                            <el-icon :size="iconSize" :color="iconColor">
                                 <Memo />
                             </el-icon>
                         </el-button>
@@ -75,7 +70,7 @@
                 <el-card>
                     <RouterLink to="/register">
                         <el-button class="btn">
-                            <el-icon :size="iconSize" color="#a8bffa">
+                            <el-icon :size="iconSize" :color="iconColor">
                                 <Menu></Menu>
                             </el-icon>
                         </el-button>
@@ -89,7 +84,7 @@
                 <el-card>
                     <RouterLink to="/hotel_location">
                         <el-button class="btn">
-                            <el-icon :size="iconSize" color="#78d2f4">
+                            <el-icon :size="iconSize" :color="iconColor">
                                 <LocationInformation />
                             </el-icon>
                         </el-button>
@@ -103,7 +98,7 @@
                 <el-card>
                     <RouterLink to="/register">
                         <el-button class="btn">
-                            <el-icon :size="iconSize" color="#88df9a">
+                            <el-icon :size="iconSize" :color="iconColor">
                                 <Avatar />
                             </el-icon>
                         </el-button>
@@ -117,7 +112,7 @@
                 <el-card>
                     <RouterLink to="/contact">
                         <el-button class="btn">
-                            <el-icon :size="iconSize" color="#75dbaf">
+                            <el-icon :size="iconSize" :color="iconColor">
                                 <Comment />
                             </el-icon>
                         </el-button>
@@ -131,7 +126,7 @@
                 <el-card>
                     <RouterLink to="/hotel">
                         <el-button class="btn">
-                            <el-icon :size="iconSize" color="#75dbaf">
+                            <el-icon :size="iconSize" :color="iconColor">
                                 <OfficeBuilding />
                             </el-icon>
                         </el-button>
@@ -147,7 +142,7 @@
 
 <script setup lang="js">
 import { Countdown } from 'vue3-flip-countdown'
-const iconSize = 60;
+const iconSize = 40;
 
 const iconColor = '#eebe77'
 
@@ -157,6 +152,7 @@ const iconColor = '#eebe77'
 .el-card {
     --el-card-padding: 2px;
     background-color: rgb(255, 246, 229);
+    width: 90px;
 }
 
 .countdown {
@@ -165,19 +161,22 @@ const iconColor = '#eebe77'
     text-align: center;
 }
 
+.square {}
+
 .btn {
-    width: 100px;
-    height: 60px;
     border: 0px;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 .grid {
+    position: relative;
+    top: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1%;
+    grid-gap: 20% 8%;
     grid-auto-flow: row;
+    font-size: small;
+    justify-items: center;
 }
 
 .grid-countdown {
@@ -188,8 +187,6 @@ const iconColor = '#eebe77'
 }
 
 .grid>div {
-    font-size: 18px;
-    line-height: 2;
     text-align: center;
 }
 
@@ -220,5 +217,6 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     height: 120px;
+    margin-top: 200px;
 }
 </style>
