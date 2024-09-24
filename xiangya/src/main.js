@@ -15,6 +15,8 @@ import Hotel from './components/Hotel.vue'
 import Contact from './components/Contact.vue'
 import Register from './components/Register.vue'
 import Countdown from 'vue3-flip-countdown'
+import Forecast from './components/Forecast.vue'
+import Expert from './components/Expert.vue'
 
 
 
@@ -29,6 +31,8 @@ const router = createRouter({
         { path: '/hotel', component: Hotel },
         { path: '/contact', component: Contact },
         { path: '/register', component: Register },
+        { path: '/forecast', component: Forecast },
+        { path: '/expert', component: Expert },
     ]
 });
 

@@ -1,6 +1,6 @@
 <template>
     <el-row class="footer">
-        <p>千屏影像技术支持<img class="logo" src="../assets/images/qp_logo.png" /></p>
+        <p>千屏影像技术支持</p>
     </el-row>
 </template>
 <style scoped>
@@ -11,6 +11,8 @@
 
 p {
     width: 100%;
+    font-size: small;
+    text-align: center;
 }
 
 .logo {

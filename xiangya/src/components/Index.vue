@@ -26,20 +26,6 @@
             </div>
             <div>
                 <el-card>
-                    <RouterLink to="/schedule">
-                        <el-button class="btn">
-                            <el-icon :size="iconSize" :color="iconColor">
-                                <InfoFilled />
-                            </el-icon>
-                        </el-button>
-                    </RouterLink>
-                    <template #footer>
-                        基本信息
-                    </template>
-                </el-card>
-            </div>
-            <div>
-                <el-card>
                     <RouterLink to="/notice">
                         <el-button class="btn">
                             <el-icon :size="iconSize" :color="iconColor">
@@ -71,40 +57,26 @@
                     <RouterLink to="/register">
                         <el-button class="btn">
                             <el-icon :size="iconSize" :color="iconColor">
-                                <Menu></Menu>
-                            </el-icon>
-                        </el-button>
-                    </RouterLink>
-                    <template #footer>
-                        个人中心
-                    </template>
-                </el-card>
-            </div>
-            <div>
-                <el-card>
-                    <RouterLink to="/hotel_location">
-                        <el-button class="btn">
-                            <el-icon :size="iconSize" :color="iconColor">
-                                <LocationInformation />
-                            </el-icon>
-                        </el-button>
-                    </RouterLink>
-                    <template #footer>
-                        会场交通
-                    </template>
-                </el-card>
-            </div>
-            <div>
-                <el-card>
-                    <RouterLink to="/register">
-                        <el-button class="btn">
-                            <el-icon :size="iconSize" :color="iconColor">
                                 <Avatar />
                             </el-icon>
                         </el-button>
                     </RouterLink>
                     <template #footer>
                         个人参会注册
+                    </template>
+                </el-card>
+            </div>
+            <div>
+                <el-card>
+                    <RouterLink to="/expert">
+                        <el-button class="btn">
+                            <el-icon :size="iconSize" :color="iconColor">
+                                <InfoFilled />
+                            </el-icon>
+                        </el-button>
+                    </RouterLink>
+                    <template #footer>
+                        大会专家
                     </template>
                 </el-card>
             </div>
@@ -124,6 +96,20 @@
             </div>
             <div>
                 <el-card>
+                    <RouterLink to="/hotel_location">
+                        <el-button class="btn">
+                            <el-icon :size="iconSize" :color="iconColor">
+                                <LocationInformation />
+                            </el-icon>
+                        </el-button>
+                    </RouterLink>
+                    <template #footer>
+                        会场交通
+                    </template>
+                </el-card>
+            </div>
+            <div>
+                <el-card>
                     <RouterLink to="/hotel">
                         <el-button class="btn">
                             <el-icon :size="iconSize" :color="iconColor">
@@ -136,12 +122,29 @@
                     </template>
                 </el-card>
             </div>
+            <div>
+                <el-card>
+                    <RouterLink to="/forecast">
+                        <el-button class="btn">
+                            <el-icon :size="iconSize" :color="iconColor">
+                                <Menu></Menu>
+                            </el-icon>
+                        </el-button>
+                    </RouterLink>
+                    <template #footer>
+                        天气预报
+                    </template>
+                </el-card>
+            </div>
         </div>
     </div>
+
+    <Footer></Footer>
 </template>
 
 <script setup lang="js">
 import { Countdown } from 'vue3-flip-countdown'
+import Footer from './Footer.vue';
 const iconSize = 40;
 
 const iconColor = '#eebe77'

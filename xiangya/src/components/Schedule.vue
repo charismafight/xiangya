@@ -1,6 +1,6 @@
 <template>
     <Header></Header>
-    <el-row style="top:60px">
+    <el-row style="top:140px">
         <el-row>
             <el-col :span="24">
                 <el-button type="primary" plain @click="down">下载文件</el-button>
@@ -15,10 +15,13 @@
             </el-container>
         </el-row>
     </el-row>
+
+    <Footer></Footer>
 </template>
 
 <script setup>
 import Header from './Header.vue'
+import Footer from './Footer.vue';
 
 const down = () => {
     const url = '/assets/pdfs/湘雅病理教育教学国际论坛日程安排.pdf'

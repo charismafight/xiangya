@@ -1,16 +1,8 @@
 <template>
-    <el-row class="header">
-        <el-col :span="2">
-            <router-link to="/">
-                <el-link :underline="false">
-                    <el-icon>
-                        <HomeFilled />
-                    </el-icon>
-                    首页
-                </el-link>
-            </router-link>
-        </el-col>
-    </el-row>
+    <router-link to="/">
+        <el-row class="header">
+        </el-row>
+    </router-link>
 </template>
 
 <style scoped>
@@ -19,10 +11,9 @@
     z-index: 999;
     width: 100%;
     text-align: left;
-    height: 60px;
+    height: 200px;
     top: 0px;
     left: 0px;
-    padding-top: 15px;
-    background-color: #8f8fe1;
+    background-color: rgb(red, green, blue, 0%);
 }
 </style>

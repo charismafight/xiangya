@@ -1,6 +1,6 @@
 <template>
     <Header></Header>
-    <el-row style="top:60px">
+    <el-row style="top:140px">
         <el-row>
             <el-col :span="24">
                 <el-button type="primary" plain @click="down">下载文件</el-button>
@@ -16,9 +16,11 @@
             </el-container>
         </el-row>
     </el-row>
+    <Footer></Footer>
 </template>
 
 <script setup>
+import Footer from './Footer.vue';
 import Header from './Header.vue'
 
 const down = () => {

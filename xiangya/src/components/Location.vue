@@ -1,15 +1,17 @@
 <template>
     <div>
         <Header></Header>
-        <div id="amp-container" style="height: 500px;top:60px;" />
+        <div id="amp-container" style="height: 500px;top:220px;" />
         <div style="text-align: center;">
-            <el-button style="margin-top: 70px;" type="primary" plain @click="redirect">导航到茉莉国际酒店</el-button>
+            <el-button style="margin-top: 240px;" type="primary" plain @click="redirect">导航到茉莉国际酒店</el-button>
         </div>
+        <Footer></Footer>
     </div>
 </template>
 <script lang="ts">
 import { defineComponent, onMounted, reactive, ref, toRefs } from 'vue';
 import Header from './Header.vue';
+import Footer from './Footer.vue';
 
 export default defineComponent({
     setup() {
@@ -66,7 +68,8 @@ export default defineComponent({
         };
     },
     components: {
-        Header
+        Header,
+        Footer
     },
     methods: {
         redirect() {
