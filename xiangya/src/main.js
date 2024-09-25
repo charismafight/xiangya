@@ -3,7 +3,7 @@ import App from './App.vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import Information from './components/Information.vue'
 import Index from './components/Index.vue'
 import Notice from './components/Notice.vue'
@@ -21,7 +21,7 @@ import Expert from './components/Expert.vue'
 
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes: [
         { path: '/', component: Index },
         { path: '/info', component: Invitation },

@@ -9,9 +9,8 @@
         <el-row>
             <el-container>
                 <el-main>
-                    <img src="../assets/images/notice1.png" alt="">
-                    <img src="../assets/images/notice2.png" alt="">
-                    <img src="../assets/images/notice3.png" alt="">
+                    <img src="../assets/images/notice3.jpg" alt="">
+                    <img src="../assets/images/notice4.jpg" alt="">
                 </el-main>
             </el-container>
         </el-row>
@@ -24,7 +23,7 @@ import Footer from './Footer.vue';
 import Header from './Header.vue'
 
 const down = () => {
-    const url = '/assets/pdfs/肿瘤病理规范化诊断及新进展培训班会议通知.pdf'
+    const url = '/assets/pdfs/肿瘤病理规范化诊断及新进展培训班会议通知_updated.pdf'
     const filename = '肿瘤病理规范化诊断及新进展培训班会议通知.pdf'
     const x = new XMLHttpRequest()
     x.open('GET', url, true)

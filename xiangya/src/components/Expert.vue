@@ -1,6 +1,6 @@
 <template>
     <Information title="大会专家">
-        <div v-for="i in 16">
+        <div v-for="i in 17">
             <img :src="imgUrls[i]" height="auto" width="100%" />
         </div>
     </Information>
@@ -13,5 +13,5 @@ import Information from './Information.vue';
 import Footer from './Footer.vue';
 
 /* @vite-ignore */
-const imgUrls = Array.from({ length: 16 }, (_, i) => new URL(`../assets/images/experts/5b893262-d74e-47ba-997f-9635192a164b-${i}.jpg`, import.meta.url));
+const imgUrls = Array.from({ length: 18 }, (_, i) => new URL(`../assets/images/experts/5b893262-d74e-47ba-997f-9635192a164b-${i}abcd.jpg`, import.meta.url));
 </script>

@@ -9,7 +9,7 @@
         <el-row>
             <el-container>
                 <el-main>
-                    <img src="../assets/images/schedule3.jpg" alt="">
+                    <img src="../assets/images/schedule5.jpg" alt="">
                     <img src="../assets/images/schedule4.jpg" alt="">
                 </el-main>
             </el-container>
@@ -24,7 +24,7 @@ import Header from './Header.vue'
 import Footer from './Footer.vue';
 
 const down = () => {
-    const url = '/assets/pdfs/湘雅病理教育教学国际论坛日程安排_updated.pdf'
+    const url = '/assets/pdfs/湘雅病理教育教学国际论坛日程安排_updated_20240925.pdf'
     const filename = '湘雅病理教育教学国际论坛日程安排.pdf'
     const x = new XMLHttpRequest()
     x.open('GET', url, true)
