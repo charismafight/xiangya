@@ -9,8 +9,8 @@
         <el-row>
             <el-container>
                 <el-main>
-                    <img src="../assets/images/schedule7.jpg" alt="">
-                    <img src="../assets/images/schedule8.jpg" alt="">
+                    <img src="../assets/images/湘雅病理教育教学国际论坛日程安排_updated_20241002_页面_1.jpg" alt="">
+                    <img src="../assets/images/湘雅病理教育教学国际论坛日程安排_updated_20241002_页面_2.jpg" alt="">
                 </el-main>
             </el-container>
         </el-row>

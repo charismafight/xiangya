@@ -85,12 +85,12 @@
                     <RouterLink to="/contact">
                         <el-button class="btn">
                             <el-icon :size="iconSize" :color="iconColor">
-                                <Comment />
+                                <VideoCameraFilled />
                             </el-icon>
                         </el-button>
                     </RouterLink>
                     <template #footer>
-                        联系我们
+                        直播间
                     </template>
                 </el-card>
             </div>
