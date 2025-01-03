@@ -1,6 +1,6 @@
 <template>
-    <Header></Header>
-    <el-row style="top:140px">
+    <Header crumb="大会议程"></Header>
+    <el-row>
         <el-row>
             <el-col :span="24">
                 <el-button type="primary" plain @click="down">下载文件</el-button>

@@ -1,19 +1,21 @@
 <template>
-    <router-link to="/">
-        <el-row class="header">
-        </el-row>
-    </router-link>
+    <el-breadcrumb separator-class="el-icon-arrow-right" class="header">
+        <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+        <el-breadcrumb-item>{{ crumb }}</el-breadcrumb-item>
+    </el-breadcrumb>
 </template>
+
+<script setup>
+
+const p = defineProps({
+    crumb: String
+})
+</script>
 
 <style scoped>
 .header {
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    text-align: left;
-    height: 200px;
-    top: 0px;
-    left: 0px;
-    background-color: rgb(red, green, blue, 0%);
+    height: 30px;
+    background-color: rgb(242, 247, 251);
+    align-content: center;
 }
 </style>
