@@ -4,8 +4,7 @@
   </el-row>
   <el-row class="content">
     <el-col class="gradient-color" style="text-align: center">
-      <h1 class="tt">湘雅病理教育教学国际论坛</h1>
-      <h3 class="ttt">湖南省医学会病理学专业委员会2024年学术年会</h3>
+      <h1 class="tt">湖南省医学会病理学专业委员会2024年学术年会</h1>
       <p class="seminar_date">湖南长沙1月9日——12日</p>
 
       <!-- countdown -->
@@ -58,7 +57,7 @@
           </div>
           <div>
             <el-card>
-              <RouterLink to="/register">
+              <RouterLink to="/">
                 <el-button class="btn">
                   <el-icon :size="iconSize" :color="iconColor">
                     <Avatar />

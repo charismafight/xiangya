@@ -1,14 +1,16 @@
 {
   "$schema": "https://cdn.statically.io/gh/nguyenngoclongdev/cdn/main/schema/v10/terminal-keeper.json",
   "theme": "tribe",
-  "active": "default",
+  "active": "saved-session",
   "activateOnStartup": true,
   "keepExistingTerminals": false,
   "sessions": {
     "saved-session": [
       {
         "name": "goto source",
-        "commands": ["cd xiangya\r npm run dev\r"]
+        "commands": [
+          "cd xiangya\r npm run dev\r"
+        ]
       }
     ]
   }

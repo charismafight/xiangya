@@ -9,16 +9,42 @@
     <el-row>
       <el-container>
         <el-main>
-          <img src="../assets/images/notices/湖南省2024年病理年会日程-第6版_页面_01.jpg" alt="" />
-          <img src="../assets/images/notices/湖南省2024年病理年会日程-第6版_页面_02.jpg" alt="" />
-          <img src="../assets/images/notices/湖南省2024年病理年会日程-第6版_页面_03.jpg" alt="" />
-          <img src="../assets/images/notices/湖南省2024年病理年会日程-第6版_页面_04.jpg" alt="" />
-          <img src="../assets/images/notices/湖南省2024年病理年会日程-第6版_页面_05.jpg" alt="" />
-          <img src="../assets/images/notices/湖南省2024年病理年会日程-第6版_页面_06.jpg" alt="" />
-          <img src="../assets/images/notices/湖南省2024年病理年会日程-第6版_页面_07.jpg" alt="" />
-          <img src="../assets/images/notices/湖南省2024年病理年会日程-第6版_页面_08.jpg" alt="" />
-          <img src="../assets/images/notices/湖南省2024年病理年会日程-第6版_页面_09.jpg" alt="" />
-          <img src="../assets/images/notices/湖南省2024年病理年会日程-第6版_页面_10.jpg" alt="" />
+          <img
+            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_1.jpg"
+            alt=""
+          />
+          <img
+            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_2.jpg"
+            alt=""
+          />
+          <img
+            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_3.jpg"
+            alt=""
+          />
+          <img
+            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_4.jpg"
+            alt=""
+          />
+          <img
+            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_5.jpg"
+            alt=""
+          />
+          <img
+            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_6.jpg"
+            alt=""
+          />
+          <img
+            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_7.jpg"
+            alt=""
+          />
+          <img
+            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_8.jpg"
+            alt=""
+          />
+          <img
+            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_9.jpg"
+            alt=""
+          />
         </el-main>
       </el-container>
     </el-row>
@@ -31,7 +57,7 @@ import Footer from './Footer.vue'
 import Header from './Header.vue'
 
 const down = () => {
-  const url = '/assets/pdfs/湖南省2024年病理年会日程-第6版(2).pdf'
+  const url = '/assets/pdfs/湖南省2024年病理年会总日程20250106.pdf'
   const filename = '湖南省2024年病理年会日程.pdf'
   const x = new XMLHttpRequest()
   x.open('GET', url, true)
