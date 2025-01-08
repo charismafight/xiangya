@@ -57,7 +57,7 @@
           </div>
           <div>
             <el-card>
-              <RouterLink to="/">
+              <RouterLink to="/expert">
                 <el-button class="btn">
                   <el-icon :size="iconSize" :color="iconColor">
                     <Avatar />

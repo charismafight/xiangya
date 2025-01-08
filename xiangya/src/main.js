@@ -17,6 +17,7 @@ import Register from './components/Register.vue'
 import Countdown from 'vue3-flip-countdown'
 import Forecast from './components/Forecast.vue'
 import Expert from './components/Expert.vue'
+import ExpertsPPT from './components/ExpertsPPT.vue'
 import Competition from './components/Competition.vue'
 import Live from './components/Live.vue'
 
@@ -32,7 +33,7 @@ const router = createRouter({
     { path: '/contact', component: Contact },
     { path: '/register', component: Register },
     { path: '/forecast', component: Forecast },
-    { path: '/expert', component: Expert },
+    { path: '/expert', component: ExpertsPPT },
     { path: '/competition', component: Competition },
     { path: '/live', component: Live }
   ]

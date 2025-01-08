@@ -1,48 +1,54 @@
 <template>
-    <Header crumb="大会议程"></Header>
+  <Header crumb="大会议程"></Header>
+  <el-row>
     <el-row>
-        <el-row>
-            <el-col :span="24">
-                <el-button type="primary" plain @click="down">下载文件</el-button>
-            </el-col>
-        </el-row>
-        <el-row>
-            <el-container>
-                <el-main>
-                    <img src="../assets/images/湘雅病理教育教学国际论坛日程安排_updated_20241010_页面_1.jpg" alt="">
-                    <img src="../assets/images/湘雅病理教育教学国际论坛日程安排_updated_20241010_页面_2.jpg" alt="">
-                </el-main>
-            </el-container>
-        </el-row>
+      <!-- <el-col :span="24">
+        <el-button type="primary" plain @click="down">下载文件</el-button>
+      </el-col> -->
     </el-row>
+    <el-row>
+      <el-container>
+        <el-main>
+          <img
+            src="../assets/images/湘雅病理教育教学国际论坛日程安排_updated_20241010_页面_1.jpg"
+            alt=""
+          />
+          <img
+            src="../assets/images/湘雅病理教育教学国际论坛日程安排_updated_20241010_页面_2.jpg"
+            alt=""
+          />
+        </el-main>
+      </el-container>
+    </el-row>
+  </el-row>
 
-    <Footer></Footer>
+  <Footer></Footer>
 </template>
 
 <script setup>
 import Header from './Header.vue'
-import Footer from './Footer.vue';
+import Footer from './Footer.vue'
 
 const down = () => {
-    const url = '/assets/pdfs/湘雅病理教育教学国际论坛日程安排_updated_20240926.pdf'
-    const filename = '湘雅病理教育教学国际论坛日程安排.pdf'
-    const x = new XMLHttpRequest()
-    x.open('GET', url, true)
-    x.responseType = 'blob'
-    x.onload = e => {
-        const url = window.URL.createObjectURL(x.response)
-        const a = document.createElement('a')
-        a.href = url
-        a.download = filename
-        a.click()
-    }
-    x.send()
+  const url = '/static/pdfs/湘雅病理教育教学国际论坛日程安排_updated_20240926.pdf'
+  const filename = '湘雅病理教育教学国际论坛日程安排.pdf'
+  const x = new XMLHttpRequest()
+  x.open('GET', url, true)
+  x.responseType = 'blob'
+  x.onload = (e) => {
+    const url = window.URL.createObjectURL(x.response)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = filename
+    a.click()
+  }
+  x.send()
 }
 </script>
 
 <style scoped>
 img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 </style>

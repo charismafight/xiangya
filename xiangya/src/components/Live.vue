@@ -14,7 +14,7 @@ import Information from './Information.vue'
 
 const redirect = () => {
   window.open(
-    'https://wx.vzan.com/live/page/903169705?v=1727332090300&ver=5cf35c9984144221867852ba24f6affa',
+    'https://wx.vzan.com/live/page/1488463236?v=1735875369141&ver=dec03451762442aab1e971e3fee3f2b8',
     '_blank'
   )
 }

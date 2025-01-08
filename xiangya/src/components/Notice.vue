@@ -2,11 +2,6 @@
   <Header crumb="大会议程"></Header>
   <el-row>
     <el-row>
-      <el-col :span="24">
-        <el-button type="primary" plain @click="down">下载文件</el-button>
-      </el-col>
-    </el-row>
-    <el-row>
       <el-container>
         <el-main>
           <img
@@ -57,7 +52,7 @@ import Footer from './Footer.vue'
 import Header from './Header.vue'
 
 const down = () => {
-  const url = '/assets/pdfs/湖南省2024年病理年会总日程20250106.pdf'
+  const url = '/static/pdfs/湘雅病理教育教学国际论坛日程安排_updated_20240926.pdf'
   const filename = '湖南省2024年病理年会日程.pdf'
   const x = new XMLHttpRequest()
   x.open('GET', url, true)
