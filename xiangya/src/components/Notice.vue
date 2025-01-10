@@ -5,39 +5,39 @@
       <el-container>
         <el-main>
           <img
-            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_1.jpg"
+            src="../assets/images/notices/20250109/湖南省2024年病理年会总日程20250109_页面_1.jpg"
             alt=""
           />
           <img
-            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_2.jpg"
+            src="../assets/images/notices/20250109/湖南省2024年病理年会总日程20250109_页面_2.jpg"
             alt=""
           />
           <img
-            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_3.jpg"
+            src="../assets/images/notices/20250109/湖南省2024年病理年会总日程20250109_页面_3.jpg"
             alt=""
           />
           <img
-            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_4.jpg"
+            src="../assets/images/notices/20250109/湖南省2024年病理年会总日程20250109_页面_4.jpg"
             alt=""
           />
           <img
-            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_5.jpg"
+            src="../assets/images/notices/20250109/湖南省2024年病理年会总日程20250109_页面_5.jpg"
             alt=""
           />
           <img
-            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_6.jpg"
+            src="../assets/images/notices/20250109/湖南省2024年病理年会总日程20250109_页面_6.jpg"
             alt=""
           />
           <img
-            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_7.jpg"
+            src="../assets/images/notices/20250109/湖南省2024年病理年会总日程20250109_页面_7.jpg"
             alt=""
           />
           <img
-            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_8.jpg"
+            src="../assets/images/notices/20250109/湖南省2024年病理年会总日程20250109_页面_8.jpg"
             alt=""
           />
           <img
-            src="../assets/images/notices/20250106/湖南省2024年病理年会总日程20250106_页面_9.jpg"
+            src="../assets/images/notices/20250109/湖南省2024年病理年会总日程20250109_页面_9.jpg"
             alt=""
           />
         </el-main>
@@ -52,7 +52,7 @@ import Footer from './Footer.vue'
 import Header from './Header.vue'
 
 const down = () => {
-  const url = '/static/pdfs/湘雅病理教育教学国际论坛日程安排_updated_20240926.pdf'
+  const url = '/static/pdfs/湖南省2024年病理年会总日程20250109.pdf'
   const filename = '湖南省2024年病理年会日程.pdf'
   const x = new XMLHttpRequest()
   x.open('GET', url, true)
